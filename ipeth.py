@@ -3,7 +3,6 @@ import re
 import pygments
 import raw_input
 
-
 def configip(fname, ip_addr, if_ind):
     content = """TYPE=Ethernet
 BOOTPROTO=none

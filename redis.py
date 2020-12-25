@@ -9,12 +9,9 @@ from time import ctime, sleep
 
 
 def redis_cluster_write():
-    redis_nodes = [{'host': '10.0.8.', 'port': 8888},
-                   {'host': '172.18.0.12', 'port': 8888},
-                   {'host': '172.18.0.13', 'port': 8888},
-                   {'host': '172.18.0.14', 'port': 8888},
-                   {'host': '172.18.0.15', 'port': 8888},
-                   {'host': '172.18.0.16', 'port': 8888}]
+    redis_nodes = [{'host': '192.168.0.105', 'port': 6380},
+                   {'host': '192.168.0.105', 'port': 6381},
+                   {'host': '192.168.0.105', 'port': 6382}]
     try:
         redis_conn = StrictRedisCluster(startup_nodes=redis_nodes, password='******')
     except Exception:
@@ -31,12 +28,9 @@ def redis_cluster_write():
 
 
 def redis_concurrence_test(thread_id):
-    redis_nodes = [{'host': '172.18.0.11', 'port': 8888},
-                   {'host': '172.18.0.12', 'port': 8888},
-                   {'host': '172.18.0.13', 'port': 8888},
-                   {'host': '172.18.0.14', 'port': 8888},
-                   {'host': '172.18.0.15', 'port': 8888},
-                   {'host': '172.18.0.16', 'port': 8888}]
+    redis_nodes = [{'host': '192.168.0.105', 'port': 6380},
+                   {'host': '192.168.0.105', 'port': 6381},
+                   {'host': '192.168.0.105', 'port': 6382}]
     try:
         redis_conn = StrictRedisCluster(startup_nodes=redis_nodes, password='******')
     except Exception:

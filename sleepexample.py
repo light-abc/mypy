@@ -6,5 +6,5 @@ def i_want_to_sleep(delay):
     time.sleep(delay)
     print('睡醒了')
 
-i_want_to_sleep(1.1)
+i_want_to_sleep(3.1)
 i_want_to_sleep(2)

@@ -2,11 +2,11 @@ import pymysql
 
 # 建立连接
 conn = pymysql.connect(
-    host='192.168.0.126',
-    port=3306,
+    host='192.168.0.105',
+    port=8066,
     user='root',
     passwd='Great@1qaz2wsx',
-    database='zabbix'
+    database='ygst-center'
 )
 
 # 创建操作数据库的游标

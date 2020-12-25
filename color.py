@@ -1,4 +1,5 @@
 from colorama import Fore,Back,Style
+import colorsys
 
 print(Fore.BLACK + 'some red text')
 print(Back.BLUE + 'and with a green background')

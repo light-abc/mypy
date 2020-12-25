@@ -7,12 +7,12 @@ linuxidc = turtle.Turtle()
 linuxidc.speed(10)
 
 linuxidc.pencolor("red")
-for i in range(200):
+for i in range(100):
     linuxidc.forward(150)
     linuxidc.right(30)
     linuxidc.forward(20)
     linuxidc.left(60)
-    linuxidc.forward(50)
+    linuxidc.forward(60)
     linuxidc.right(30)
 
     linuxidc.penup()

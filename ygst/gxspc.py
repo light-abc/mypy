@@ -19,7 +19,7 @@ def rename():
         if os.path.isfile(mname):
             print(fname+'重命名成功!')
 
-def plcm():
+def plgm():
     if file_list == listdir:
         for item in file_list:
             mitem = item[:-4]
@@ -48,4 +48,4 @@ def jps():
     os.system('jps;ps -ef|grep java')
 
 if __name__ == '__main__':
-    plcm()
+    plgm()
