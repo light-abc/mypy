@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: window
+Version: 0.0.3
+Summary: Easy ncurses applications
+Home-page: http://github.com/LukeB42/Window
+Author: Luke Brooks
+Author-email: luke@psybernetics.org
+License: MIT
+Download-URL: http://github.com/LukeB42/Window/tarball/0.1
+Description: 
+        This module provides Window and Pane objects for rapidly creating ncurses programs without sacrificing quality.
+        
+Keywords: ncurses tui
+Platform: UNKNOWN

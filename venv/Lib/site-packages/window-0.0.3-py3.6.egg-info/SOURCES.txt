@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+window.py
+window.egg-info/PKG-INFO
+window.egg-info/SOURCES.txt
+window.egg-info/dependency_links.txt
+window.egg-info/pbr.json
+window.egg-info/top_level.txt

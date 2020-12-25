@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PyMouse
+Version: 1.0
+Summary: Cross-platform mouse control
+Home-page: http://github.com/pepijndevos/PyMouse
+Author: Pepijn de Vos
+Author-email: pepijndevos@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,11 @@
+README.txt
+setup.py
+PyMouse.egg-info/PKG-INFO
+PyMouse.egg-info/SOURCES.txt
+PyMouse.egg-info/dependency_links.txt
+PyMouse.egg-info/top_level.txt
+pymouse/__init__.py
+pymouse/java_.py
+pymouse/mac.py
+pymouse/unix.py
+pymouse/windows.py
