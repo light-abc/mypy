@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: xlutils3
+Version: 1.0.2
+Summary: this is a test package for packing python liberaries tutorial.It is based on xlutils1.7 and can be used in python3.4+ programs.
+Home-page: https://github.com/slqt/python_xlutils_approve.git
+Author: slqt
+Author-email: hzqt210@gmail.com
+License: GPL
+Description: UNKNOWN
+Keywords: python python3 xlutils xlrd xlwt
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

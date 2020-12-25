@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: heartrate
+Version: 0.2.1
+Summary: Simple real time visualisation of the execution of a Python program.
+Home-page: https://github.com/alexmojaki/heartrate
+Author: Alex Hall
+Author-email: alex.mojaki@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
