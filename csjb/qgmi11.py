@@ -15,7 +15,7 @@ def run(playwright):
 
     # Click text="同意"
     page.click("text=\"同意\"")
-    # assert page.url == "https://account.xiaomi.com/pass/serviceLogin?callback=http://order.mi.com/login/callback?followup=https%3A%2F%2Fwww.mi.com%2F&sign=NzY3MDk1YzczNmUwMGM4ODAxOWE0NjRiNTU5ZGQyMzFhYjFmOGU0Nw,,&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180"
+    # assert page.url == "https://account.xiaomi.com/pass/serviceLogin?callback=http%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252F%26sign%3DNzY3MDk1YzczNmUwMGM4ODAxOWE0NjRiNTU5ZGQyMzFhYjFmOGU0Nw%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180"
 
     # Click input[name="user"]
     page.click("input[name=\"user\"]")
@@ -34,10 +34,10 @@ def run(playwright):
     with page.expect_navigation():
         page.press("input[name=\"password\"]", "Enter")
 
-    # Click div[id="J_navMenu"] img[alt="小米11"]
-    with page.expect_popup() as popup_info:
-        page.click("div[id=\"J_navMenu\"] img[alt=\"小米11\"]")
-    page1 = popup_info.value
+    # Click //a[normalize-space(.)='小米11 骁龙888 | 2K四曲面屏3999元起']/div/img[normalize-space(@alt)='小米11']
+    # with page.expect_popup() as popup_info:
+    #     page.click("//a[normalize-space(.)='小米11 骁龙888 | 2K四曲面屏3999元起']/div/img[normalize-space(@alt)='小米11']")
+    # page1 = popup_info.value
 
     # Click text="立即购买"
     with page1.expect_popup() as popup_info:
@@ -50,15 +50,24 @@ def run(playwright):
     # Click text="雷军签名版"
     page2.click("text=\"雷军签名版\"")
 
-    # Click text="套装版"
-    page2.click("text=\"套装版\"")
+    # Click text="敬请期待"
+    page2.click("text=\"立即抢购\"")
 
-    # Click text="加入购物车"
-    page2.click("text=\"加入购物车\"")
+    # Click text="套装版（赠充电器）"
+    page2.click("text=\"套装版（赠充电器）\"")
 
-    # Click //em
-    page.click("//em")
-    # assert page.url == "https://www.mi.com/buy/cart"
+    # Click text="立即预约"
+    page2.click("text=\"立即抢购\"")
+
+    # Close page
+    page2.close()
+
+    # Close page
+    page1.close()
+
+    # Close page
+    page.close()
+
     # ---------------------
     context.close()
     browser.close()

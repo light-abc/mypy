@@ -56,16 +56,17 @@ ws.append(title)
 n = 0
 for i in range(160,224):
     n += 1
-    ws.cell(row=n+1, column=1, value='10.0.18.'+str(i))
+    ws.cell(row=n + 1, column=1, value='10.0.18.'+str(i))
 for i in range(227,248):
     n += 1
     ws.cell(row=n + 1, column=1, value='10.0.18.' + str(i))
+
 for i,m in enumerate(fwqm):
-    i += 1
-    ws.cell(row=i+1, column=2, value=fwqm[i])
+    i1 = i + 1
+    ws.cell(row=i1 + 1, column=2, value=fwqm[i])
 for i,m in enumerate(hostn):
-    i += 1
-    ws.cell(row=i+1, column=3, value=hostn[i])
+    i2 = i + 1
+    ws.cell(row=i2 + 1, column=3, value=hostn[i])
 
 with open('xunjian.txt', 'r+', encoding='utf-8') as f:
     s1 = f.readlines()
@@ -73,10 +74,12 @@ f.close()
 
 for i,s in enumerate(s1):
     i += 1
-    cpu = float(s[:5])/100
-    mem = float(s[5:10])/100
-    disk = float(s[-6:-1])/100
-    '{:.2f}%'.format(cpu)
+    list = s.split()
+    # if s[1] is str:
+    cpu = float(list[0])/100
+    mem = float(list[1])/100
+    disk = float(list[2])/100
+    # '{:.2f}%'.format(cpu)
     ws.cell(row=i+1, column=4, value=cpu)
     ws.cell(row=i+1, column=5, value=mem)
     ws.cell(row=i+1, column=6, value=disk)

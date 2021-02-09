@@ -1,0 +1,29 @@
+###配置NTP文件
+
+mv /etc/ntp.conf  /etc/ntp.conf.bak
+
+echo 'server 192.168.5.200' >> /etc/ntp.conf
+
+echo 'Fudge 192.168.5.200 stratum 10' >> /etc/ntp.conf
+
+###安装NTP软件包并启动NTP服务
+
+rm /etc/yum.repos.d/*.repo
+
+echo '[ol7_u5_base]' >> /etc/yum.repos.d/local.repo
+
+echo 'name=Oracle Linux' >> /etc/yum.repos.d/local.repo
+
+echo 'baseurl=http://192.168.5.250/redhat7' >> /etc/yum.repos.d/local.repo
+
+echo 'gpgkey=http://192.168.5.250/redhat7/RPM-GPG-KEY-redhat-release' >> /etc/yum.repos.d/local.repo
+
+echo 'gpgcheck=1' >> /etc/yum.repos.d/local.repo
+
+echo 'enabled=1' >> /etc/yum.repos.d/local.repo
+
+yum  install  -y  ntp*
+
+systemctl start ntpd
+
+systemctl enable ntpd
